@@ -1,0 +1,88 @@
+.main-content{
+    margin-top : 100px;
+    width : 600px;
+    height : 400px;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    flex-direction: column;
+}
+
+.acceuil-content{
+    width: 100%;
+    height: 100%;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+}
+
+.acceuil-content h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.acceuil-content > .welcome-message{
+    margin-top : 20px;
+    display : flex;
+    flex-direction : column;
+}
+
+.welcome-title{
+    font-size : 50px;
+    text-align : center;
+}
+
+.welcome-title i{
+    font-style: italic;
+    color: #6938EF;
+}
+
+.welcome-message p{
+    text-align : center;
+    padding-left : 30px;
+    margin-top : 10px;
+}
+
+.ctn-btn-stl{
+    display : flex;
+    align-items : center;
+    justify-content : center;
+}
+
+.ctn-btn-stl{
+    img{
+        width : 17px;
+        border-radius : 17px;
+        background-color : #E2EAFC;
+        margin-left : 5px;
+    }
+}
+
+.ctn-btn-stl{
+    a{
+        border-radius : 20px;
+        width : 40px;
+        background-color : #6938EF;
+        margin-right : 10px;
+        color : #FFF;
+    }
+}
+
+.button-container{
+    text-align: center; 
+    font-size: 14px;
+}
+
+.button-container > button{
+    border-radius : 20px;
+    padding : 5px 10px;
+    font-size : 10px;
+    font-weight : 500;
+    border : none;
+    background-color : #E2EAFC;
+}
+
+.button-container>button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(105, 56, 239, 0.3);
+}
