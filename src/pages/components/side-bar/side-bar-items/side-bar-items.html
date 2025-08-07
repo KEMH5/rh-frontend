@@ -1,0 +1,6 @@
+<div class="sidebar-item" [class.active]="isActive" (click)="onItemClick()">
+    <div class="item-icon">
+        <img [src]="icon" [alt]="desc" width="20" height="20" />
+    </div>
+    <span class="item-text">{{ desc }}</span>
+</div>

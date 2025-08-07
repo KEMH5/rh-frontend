@@ -1,0 +1,138 @@
+.kpi-card {
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    transition: all 0.2s ease;
+    width: 100%;
+    min-height: 180px;
+}
+
+.kpi-card:hover {
+    border-color: #d1d5db;
+}
+
+.kpi-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 20px 0 20px;
+}
+
+.kpi-title-section {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.kpi-title {
+    font-size: 26px;
+    font-weight: 500;
+    color: #000000;
+    margin: 0;
+}
+
+.kpi-icon .info-icon {
+    color: #d1d5db;
+    font-size: 12px;
+    cursor: default;
+}
+
+.kpi-menu .menu-dots {
+    color: #9ca3af;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: px;
+    transition: background-color 0.2s;
+}
+
+.kpi-menu .menu-dots:hover {
+    background-color: #f3f4f6;
+}
+
+.kpi-content {
+    padding: 8px 20px 20px 20px;
+}
+
+.kpi-main {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.kpi-value {
+    font-size: 42px;
+    font-weight: 700;
+    color: #111827;
+    line-height: 1;
+}
+
+.kpi-percentage {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.kpi-percentage.positive {
+    color: #059669;
+    background-color: #ecfdf5;
+}
+
+.kpi-percentage.negative {
+    color: #dc2626;
+    background-color: #fef2f2;
+}
+
+.percentage-icon {
+    font-size: 12px;
+}
+
+.kpi-details {
+    background-color: #f9fafb;
+    padding: 14px 20px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e5e7eb;
+    margin: 0 20px 20px 20px;
+}
+
+.kpi-change-text {
+    font-size: 12px;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.see-detail-btn {
+    background: none;
+    border: none;
+    color: #4f46e5;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 0;
+    transition: color 0.2s;
+}
+
+.see-detail-btn:hover {
+    color: #3730a3;
+}
+
+.see-detail-btn .arrow {
+    font-size: 14px;
+    transition: transform 0.2s;
+}
+
+.see-detail-btn:hover .arrow {
+    transform: translateX(2px);
+}

@@ -1,0 +1,24 @@
+<div class="main-container">
+    <div class="title">
+        <h1>Dashboard</h1>
+        <p>Welcome to the HumanOS Dashboard</p>
+    </div>
+
+    <div class="kpi-grid">
+        <app-kpi-card title="Total Employees" value="108" percentage="1.8%" changeText="+2 from last month"
+            [isPositive]="true" detailRoute="/dashboard/employee">
+        </app-kpi-card>
+
+        <app-kpi-card title="Attendance Rate" value="94.2%" percentage="2.1%" changeText="from last week"
+            [isPositive]="true" detailRoute="/dashboard/attendance">
+        </app-kpi-card>
+
+        <app-kpi-card title="Active Projects" value="42" percentage="8%" changeText="from last quarter"
+            [isPositive]="true" detailRoute="/dashboard/report">
+        </app-kpi-card>
+    </div>
+
+    <div class="attendance-section">
+        <app-attendance-card></app-attendance-card>
+    </div>
+</div>

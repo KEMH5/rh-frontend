@@ -1,0 +1,31 @@
+<div class="side-bar">
+    <div class="sideBar-title">
+        <div class="logo-container">
+            <img ngSrc="/logo.svg" alt="Logo" height="69" width="69" />
+            <h1>HumanOS</h1>
+        </div>
+        <a href="#">
+            <img src="/close.svg" alt="reduce sidebar" width="20" height="20" />
+        </a>
+    </div>
+    <nav class="side-bar-content">
+        <div class="main-menu">
+            <h1>MAIN MENU</h1>
+            <app-side-bar-items *ngFor="let item of principalItems" [icon]="item.icone" [desc]="item.desc"
+                [isActive]="isItemActive(item.desc)" (itemClick)="setActiveItem(item.desc)">
+            </app-side-bar-items>
+        </div>
+        <div class="management">
+            <h1>MANAGEMENT</h1>
+            <app-side-bar-items *ngFor="let item of managementItems" [icon]="item.icone" [desc]="item.desc"
+                [isActive]="isItemActive(item.desc)" (itemClick)="setActiveItem(item.desc)">
+            </app-side-bar-items>
+        </div>
+        <div class="other-menu">
+            <h1>OTHER MENU</h1>
+            <app-side-bar-items *ngFor="let item of menuItems" [icon]="item.icone" [desc]="item.desc"
+                [isActive]="isItemActive(item.desc)" (itemClick)="setActiveItem(item.desc)">
+            </app-side-bar-items>
+        </div>
+    </nav>
+</div>

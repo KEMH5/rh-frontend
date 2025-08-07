@@ -1,0 +1,31 @@
+<div class="kpi-card">
+    <div class="kpi-header">
+        <div class="kpi-title-section">
+            <h3 class="kpi-title">{{ title }}</h3>
+            <div class="kpi-icon">
+                <span class="info-icon">ⓘ</span>
+            </div>
+        </div>
+        <div class="kpi-menu">
+            <span class="menu-dots">⋯</span>
+        </div>
+    </div>
+
+    <div class="kpi-content">
+        <div class="kpi-main">
+            <div class="kpi-value">{{ value }}</div>
+            <div class="kpi-percentage" [class.positive]="isPositive" [class.negative]="!isPositive">
+                <span class="percentage-icon">{{ isPositive ? '↗' : '↘' }}</span>
+                {{ percentage }}
+            </div>
+        </div>
+    </div>
+
+    <div class="kpi-details" *ngIf="hasDetails">
+        <span class="kpi-change-text">{{ changeText }}</span>
+        <button class="see-detail-btn" (click)="onSeeDetail()" *ngIf="detailRoute">
+            See detail
+            <span class="arrow">→</span>
+        </button>
+    </div>
+</div>

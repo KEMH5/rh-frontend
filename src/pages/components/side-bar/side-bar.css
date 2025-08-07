@@ -1,0 +1,94 @@
+.sideBar-title {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-top: 10px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sideBar-title>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.sideBar-title>a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.sideBar-title>a>img {
+    display: block;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.side-bar {
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    overflow: hidden;
+}
+
+.logo-container>h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+}
+
+.logo-container img {
+    width: 32px;
+    height: 32px;
+}
+
+.main-menu {
+    font-size: 12px;
+    margin: 12px 0 10px 20px;
+    padding-left: 0;
+}
+
+.main-menu h1,
+.management h1,
+.other-menu h1 {
+    font-size: 12px;
+    font-weight: 600;
+    color: #6B7280;
+    margin: 0 0 8px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.management,
+.other-menu {
+    font-size: 12px;
+    margin: 20px 0 10px 20px;
+    padding-left: 0;
+}
+
+.side-bar-content {
+    padding: 0;
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.side-bar > nav > div{
+    margin-bottom: 40px;
+}
