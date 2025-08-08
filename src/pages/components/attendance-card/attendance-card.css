@@ -4,7 +4,7 @@
     border: 1px solid #e5e7eb;
     transition: all 0.2s ease;
     width: 100%;
-    min-height: 180px;
+    min-height: 300px;
 }
 
 .attendance-card:hover {
@@ -57,9 +57,9 @@
 }
 
 .attendance-icon .info-icon {
-    color: #d1d5db;
-    font-size: 12px;
-    cursor: default;
+  color: #d1d5db;
+  font-size: 12px;
+  cursor: default;
 }
 
 .attendance-menu .menu-dots {

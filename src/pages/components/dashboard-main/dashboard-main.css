@@ -3,7 +3,7 @@
     height: 100%;
     background-color: transparent;
     border: none;
-    padding: 0;
+    padding: 0 32px 0 0;
     margin: 0;
 }
 
@@ -23,15 +23,30 @@
     color: #6c757d;
 }
 
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: auto 502px;
+    gap: 32px;
+    align-items: start;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 .kpi-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(280px, 320px));
     gap: 32px;
-    margin-bottom: 32px;
     justify-content: start;
 }
 
 .attendance-section {
-    margin-top: 24px;
     width: calc(3 * 320px + 2 * 32px);
+}
+
+.right-section {
+    width: 502px;
 }

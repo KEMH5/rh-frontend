@@ -25,6 +25,7 @@
               }
             ],
             "styles": [
+              "node_modules/@primeuix/themes/aura/aura-light/indigo/theme.css",
               "src/styles.css"
             ],
             "server": "src/main.server.ts",
