@@ -4,7 +4,7 @@ import { Acceuil } from '../pages/components/acceuil/acceuil';
 import { Dashboard } from '../pages/dashboard/dashboard';
 import { DashboardMain } from '../pages/components/dashboard-main/dashboard-main';
 import { Employee } from '../pages/components/employee/employee';
-import { HiringPart } from '../pages/components/hiring-part/hiring-part';
+import { HiringPartComponent } from '../pages/components/hiring-part/hiring-part';
 import { Inbox } from '../pages/components/inbox/inbox';
 import { Report } from '../pages/components/report/report';
 import { HelpSupport } from '../pages/components/help-support/help-support';
@@ -21,7 +21,7 @@ export const routes: Routes = [
             { path: '', component: DashboardMain },
             { path: 'main', component: DashboardMain },
             { path: 'employee', component: Employee },
-            { path: 'hiring', component: HiringPart },
+            { path: 'hiring', component: HiringPartComponent },
             { path: 'inbox', component: Inbox },
             { path: 'report', component: Report },
             { path: 'help-support', component: HelpSupport },
